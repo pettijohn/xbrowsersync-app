@@ -1,0 +1,1 @@
+docker run -v .:/code --entrypoint npm --workdir /code --rm -it node -- "$@"
