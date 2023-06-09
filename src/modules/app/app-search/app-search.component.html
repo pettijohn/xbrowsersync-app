@@ -7,9 +7,15 @@
                  ng-class="{ 'active': vm.currentUrlBookmarked }"
                  on-click="vm.utilitySvc.handleEvent(vm.switchToBookmarkView)"
                  ng-if="!vm.utilitySvc.isMobilePlatform(vm.platformSvc.platformName)" tab-index="4"></icon-button>
-    <icon-button type="vm.displayFolderView ? 'align-justify' : 'align-left'" size="1.5em"
+
+      <!-- TODO - localize text -->
+      <icon-button type="'tag'" size="1.5em"
+                 title="Browse Tags" 
+                 on-click="vm.utilitySvc.handleEvent(vm.switchToTagBrowser)" tab-index="3"></icon-button>
+
+      <icon-button type="vm.displayFolderView ? 'align-justify' : 'align-left'" size="1.5em"
                  title="{{ vm.displayFolderView ? vm.platformSvc.getI18nString(vm.Strings.View.Search.SearchResults) : vm.platformSvc.getI18nString(vm.Strings.View.Search.BookmarkTree) }}"
-                 on-click="vm.utilitySvc.handleEvent(vm.toggleBookmarkTreeView)" tab-index="3"></icon-button>
+                 on-click="vm.utilitySvc.handleEvent(vm.toggleBookmarkTreeView)" tab-index="2"></icon-button>
     <div class="search-form form-group icon-button-container">
       <input type="text" name="txtSearch" ng-model="vm.query" ng-model-options="{ debounce: globals.Debounce }"
              class="form-control" maxlength="200"

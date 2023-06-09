@@ -29,6 +29,7 @@ export class IconComponent implements OnInit {
     search: require('lucide-static/icons/search.svg'),
     settings: require('lucide-static/icons/settings.svg'),
     'share-2': require('lucide-static/icons/share-2.svg'),
+    tag: require('lucide-static/icons/tag.svg'),
     'trash-2': require('lucide-static/icons/trash-2.svg'),
     x: require('lucide-static/icons/x.svg'),
     'x-circle': require('lucide-static/icons/x-circle.svg')
