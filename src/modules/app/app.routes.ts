@@ -70,6 +70,20 @@ export class AppRoutesModule {}
           controllerAs: 'vm',
           template: require('./app-sync-removed/app-sync-removed.controller.html')
         })
+        .when(`${RoutePath.TagBrowser}`, {
+          controller: 'SyncEnabledController',
+          controllerAs: 'vm',
+          template: require('./app-tagbrowser/app-tagbrowser.controller.html')
+          // template: require('./app-bookmark/app-bookmark.controller.html')
+          // template: require('./app-settings/app-settings.controller.html')
+        })
+        .when(`${RoutePath.TagBrowser}:tags`, {
+          controller: 'SyncEnabledController',
+          controllerAs: 'vm',
+          template: require('./app-tagbrowser/app-tagbrowser.controller.html')
+          // template: require('./app-bookmark/app-bookmark.controller.html')
+          // template: require('./app-settings/app-settings.controller.html')
+        })
         .when(`${RoutePath.TelemetryCheck}`, {
           controller: 'AppController',
           controllerAs: 'vm',

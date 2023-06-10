@@ -875,6 +875,10 @@
       "SearchResults": {
         "key": "View_Search_SearchResults",
         "default": "View search results"
+      },
+      "TagBrowser": {
+        "key": "View_Search_TagBrowser",
+        "default": "Browse by Tags"
       }
     },
     "Settings": {

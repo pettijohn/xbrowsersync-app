@@ -11,6 +11,7 @@ import { AppBackgroundComponent } from './app-background/app-background.componen
 import { AppHelpComponent } from './app-help/app-help.component';
 import { AppLoginModule } from './app-login/app-login.module';
 import { AppPermissionsComponent } from './app-permissions/app-permissions.component';
+import { AppTagBrowserComponent } from './app-tagbrowser/app-tagbrowser.component';
 import { BookmarkComponent } from './app-search/bookmark/bookmark.component';
 import { BookmarkTreeComponent } from './app-search/bookmark-tree/bookmark-tree.component';
 import { AppSettingsModule } from './app-settings/app-settings.module';
@@ -28,6 +29,7 @@ import { IconButtonComponent } from './shared/icon-button/icon-button.component'
     AppPermissionsComponent,
     AppSupportComponent,
     AppSyncRemovedComponent,
+    AppTagBrowserComponent,
     AppTelemetryComponent,
     AppUpdatedComponent,
     BookmarkComponent,

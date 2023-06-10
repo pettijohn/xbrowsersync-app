@@ -236,6 +236,7 @@ export class AndroidAppComponent extends AppMainComponent implements OnInit {
       this.utilitySvc.checkCurrentRoute(RoutePath.Scan) ||
       this.utilitySvc.checkCurrentRoute(RoutePath.Settings) ||
       this.utilitySvc.checkCurrentRoute(RoutePath.Support) ||
+      this.utilitySvc.checkCurrentRoute(RoutePath.TagBrowser) ||
       this.utilitySvc.checkCurrentRoute(RoutePath.Updated)
     ) {
       // Back to login/search panel

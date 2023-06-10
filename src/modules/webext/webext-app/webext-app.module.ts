@@ -1,5 +1,6 @@
 import { NgModule } from 'angular-ts-decorators';
 import { AppModule } from '../../app/app.module';
+import { AppTagBrowserComponent } from '../../app/app-tagbrowser/app-tagbrowser.component';
 import { AppBookmarkComponent } from '../../app/app-bookmark/app-bookmark.component';
 import { WebExtSharedModule } from '../shared/webext-shared.module';
 import { WebExtAppComponent } from './webext-app.component';
@@ -10,6 +11,7 @@ import { WebExtAppWorkingComponent } from './webext-app-working/webext-app-worki
 @NgModule({
   declarations: [
     AppBookmarkComponent,
+    AppTagBrowserComponent,
     WebExtAppAlertComponent,
     WebExtAppComponent,
     WebExtAppSearchComponent,

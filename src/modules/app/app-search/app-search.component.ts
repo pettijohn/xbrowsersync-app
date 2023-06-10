@@ -14,7 +14,7 @@ import { UtilityService } from '../../shared/utility/utility.service';
 import { WorkingService } from '../../shared/working/working.service';
 import { KeyCode, RoutePath } from '../app.enum';
 import { AppHelperService } from '../shared/app-helper/app-helper.service';
-import { BookmarkSearchResult, BookmarkTreeItem } from './app-search.interface';
+import { BookmarkTreeItem, BookmarkSearchResult } from './app-search.interface';
 
 export abstract class AppSearchComponent implements OnInit {
   Strings = require('../../../../res/strings/en.json');
@@ -460,6 +460,11 @@ export abstract class AppSearchComponent implements OnInit {
 
     // Trigger native share functionality
     (this.appHelperSvc as AndroidAppHelperService).shareBookmark(bookmarkToShare);
+  }
+
+  @boundMethod
+  switchToTagBrowser(): void {
+    this.appHelperSvc.switchView(RoutePath.TagBrowser);
   }
 
   @boundMethod
